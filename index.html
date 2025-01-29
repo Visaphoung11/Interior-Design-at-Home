@@ -1,0 +1,644 @@
+<!doctype html>
+<html>
+<head>
+<title>My first Tailwind CSS project</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<header>
+    <div class="relative h-[447px] lg:h-[810px]">
+      <img
+        class="h-full w-full object-cover"
+        src="https://media.istockphoto.com/id/2170199827/photo/black-luxury-modern-retro-style-master-bedroom.jpg?s=2048x2048&w=is&k=20&c=RHIExLqcrrP0ZnkFOWX4O5WSo3Ej6-XTqMuxuidg5y8="
+        alt="header"
+      />
+      <nav
+        class="absolute top-0 left-0 right-0 py-4 px-4 sm:px-16 flex flex-row justify-between items-center"
+      >
+        <a
+          href="#"
+          class="text-4xl font-alegreya text-black font-medium hover:underline whitespace-nowrap"
+          >NEW INTERIOR.</a
+        >
+      </nav>
+      <section
+        class="hero absolute top-[30%] right-[50%] translate-y-[30%] translate-x-[50%] lg:top-[40%] lg:right-[50%] lg:translate-y-[50%] lg:translate-x-[50%]"
+      >
+        <h1
+          class="text-[40px] lg:text-[56px] text-white font-nixie font-semibold text-center whitespace-nowrap"
+        >
+          SLIM & STYLISH
+        </h1>
+        <h2 class="text-[22.4px] text-ni-weiss-50 font-alegreya text-center">
+          Modern Design & Competent Service.
+        </h2>
+      </section>
+    </div>
+  </header>
+  <main>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  ABOUT                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="bg-ni-weiss">
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Latest Work Info -->
+        <div
+          >
+          <div class="text-center mt-[50px]">
+             <h2
+                class="text-ni-green-dunkel text-4xl font-alegreyaSans font-normal mb-3"
+               >
+                  Our Latest Works
+                 </h2>
+                  <p class="text-sm">Take a look at some of our recent products</p>
+                 </div>
+          </div>
+        </div>
+        <!-- Latest Work Image Cards -->
+        <div
+          class="flex flex-wrap justify-center items-center shrink-0 mx-auto gap-8"
+        >
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://images.prismic.io/luxdeco-dev/Mjc2NDExMGYtMTZkNC00MDE5LWI4MTItMzFhOGU5MGU5Zjdj_popular_interior_design_styles_-_top_interior_design_styles_-_luxdeco.com_4b2c7927-83ff-4f01-88f9-a544745bdf7f.jpg?auto=compress,format&w=1200&q=100&rect=0,0,1600,900"
+              alt="treppe"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://foyr.com/learn/wp-content/uploads/2023/04/Art-Deco-Interior-Design-Style.webp"
+              alt="sofa"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://en.idei.club/uploads/posts/2023-06/thumbs/1687313265_en-idei-club-p-realistic-interior-design-dizain-pinterest-42.jpg"
+              alt="kueche"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://www.home-designing.com/wp-content/uploads/2018/04/Modern-dining-room-scheme.jpg"
+              alt="bett"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://www.marthastewart.com/thmb/avoScmwRJSLhKHUiAM0nhsoQwS4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/interior-design-styles-midcentury-modern-getty-0623-4212409bc9dc4974809fb3f03e5cc350.jpg"
+              alt="stuhl"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://images.squarespace-cdn.com/content/v1/556764ece4b0548a271711fa/26153a89-9176-45d4-bc5a-466bfda7cd6d/SBD-verdugo-mtns-6.jpg"
+              alt="home"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+          class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+        >
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.marthastewart.com/thmb/avoScmwRJSLhKHUiAM0nhsoQwS4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/interior-design-styles-midcentury-modern-getty-0623-4212409bc9dc4974809fb3f03e5cc350.jpg"
+            alt="stuhl"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div
+          class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+        >
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://images.squarespace-cdn.com/content/v1/556764ece4b0548a271711fa/26153a89-9176-45d4-bc5a-466bfda7cd6d/SBD-verdugo-mtns-6.jpg"
+            alt="home"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                SERVICES                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="services mt-[50px]">
+      <div
+        class="relative w-full h-[958px] md:h-[838px] lg:h-[542px] xl:h-[800px]"
+      >
+        <div
+          style="
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(https://vevano.com/cdn/shop/articles/jose-soriano-cyX48XZiwMA-unsplash.jpg?v=1657031094);
+          "
+          class="w-full h-full object-cover bg-no-repeat xl:object-center"
+        ></div>
+        <div
+          class="services-cards flex flex-col items-center gap-16 justify-evenly absolute h-[80%] w-[100%] top-[10%] md:w-[96%] md:right-[2%] md:left-[2%] xl:w-[80%] xl:h-[80%] xl:right-[10%] xl:left-[10%] bg-black opacity-50 rounded-xl"
+        >
+          <div class="flex flex-col items-center justify-center gap-2">
+            <h3 class="text-white text-[36px] font-alegreyaSans font-medium">
+              Our services
+            </h3>
+            <p class="text-white text-center text-[14px]">
+              A little about what we do
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row gap-12 items-center justify-center"
+          >
+            <div class="flex flex-col items-center w-[90%]">
+              <img src="http://www.w3.org/2000/svg" alt="" />
+              <h3
+                class="text-white text-[30px] font-alegreyaSans font-medium"
+              >
+                Concepts
+              </h3>
+              <p class="text-white text-center text-[14px]">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+            </div>
+            <div class="flex flex-col items-center w-[90%]">
+              <img src="./public/img/Icon-1.svg" alt="" />
+              <h3
+                class="text-white text-[30px] font-alegreyaSans font-medium"
+              >
+                Colors
+              </h3>
+              <p class="text-white text-center text-[14px]">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+            </div>
+            <div class="flex flex-col items-center w-[90%]">
+              <img src="./public/img/Icon-2.svg" alt="" />
+              <h3
+                class="text-white text-[30px] font-alegreyaSans font-medium"
+              >
+                Illustration
+              </h3>
+              <p class="text-white text-center text-[14px]">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  BLOG                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="bg-ni-weiss">
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Latest Work Info -->
+        <div
+          class="flex justify-around min-[1142px]:justify-between items-center py-16 px-2"
+        >
+          <div>
+            <h2
+              class="text-ni-green-dunkel text-4xl font-alegreyaSans font-normal mb-3"
+            >
+              From the Blog
+            </h2>
+            <p class="text-sm">Keep up with the latest happenings.</p>
+          </div>
+        </div>
+        <!-- Latest Work Image Cards -->
+        <div
+          class="flex flex-wrap justify-center items-start shrink-0 mx-auto gap-8"
+        >
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?cs=srgb&dl=pexels-houzlook-3797991.jpg&fm=jpg"
+              alt="treppe"
+            />
+
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+                Design Your Mind
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg"
+              alt="sofa"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+                Winter Is Comming
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://images.squarespace-cdn.com/content/v1/5820b938d482e9a9a7034dea/1578671565965-M3T2P1AD7U714UTNKJUV/pexels-photo-1571458.jpg"
+              alt="kueche"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+                The Illustration
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div
+          class="flex flex-wrap justify-center items-start shrink-0 mx-auto gap-8"
+        >
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?cs=srgb&dl=pexels-houzlook-3797991.jpg&fm=jpg"
+              alt="treppe"
+            />
+
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+                Design Your Mind
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg"
+              alt="sofa"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+                Winter Is Comming
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://images.squarespace-cdn.com/content/v1/5820b938d482e9a9a7034dea/1578671565965-M3T2P1AD7U714UTNKJUV/pexels-photo-1571458.jpg"
+              alt="kueche"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+                The Illustration
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 SLOGAN                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section>
+      <div
+        class="relative bg-fixed w-full h-[622px] md:h-[464px] xl:h-[385px] mx-auto flex flex-col items-center justify-center"
+        style="background-image: url(https://images2.alphacoders.com/134/1347182.png)"
+      >
+        <div
+          class="flex flex-col items-center gap-2 justify-evenly absolute h-[80%] w-[80%] top-[10%] md:w-[96%] md:right-[2%] md:left-[2%] xl:w-[80%] xl:h-[80%] xl:right-[10%] xl:left-[10%] bg-black opacity-50 rounded-xl"
+        >
+          <h3
+            class="text-white text-[36px] text-center font-alegreyaSans font-light"
+          >
+            In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis,
+            vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget
+            ultricies sit amet, hendrerit.
+          </h3>
+          <a
+            class="cursor-pointer text-white text-center border p-2 border-white text-[14px] hover:text-ni-green-dunkel hover:bg-white"
+          >
+            Get a free quote
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              TESTIMONIALS                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="bg-ni-weiss">
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Testiminoals Heading -->
+        <div
+          class="flex flex-col justify-around min-[1142px]:justify-between items-center py-16 px-16"
+        >
+          <div>
+            <h2
+              class="text-ni-green-dunkel text-4xl text-center font-alegreyaSans font-normal mb-3"
+            >
+              Testimonials
+            </h2>
+            <p class="text-sm text-center">
+              Some happy customers have to say.
+            </p>
+          </div>
+          <div
+            class="pt-16 flex flex-col lg:flex-row justify-center items-center gap-2"
+          >
+            <div
+              class="pt-16 flex flex-col justify-center items-center gap-2"
+            >
+              <img
+                src="./public/img/photo-1521119989659-a83eee488004.png"
+                alt="person1"
+              />
+              <p
+                class="text-center w-[90%] text-ni-grau-dunkel text-sm mb-2 mt-2"
+              >
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <h5 class="text-ni-green-dunkel text-sm text-center font-bold">
+                Jhon Doe
+              </h5>
+              <h6 class="text-sm text-ni-grau-dunkel">
+                Head of Ideas, Technext
+              </h6>
+            </div>
+            <div
+              class="pt-16 flex flex-col justify-center items-center gap-2"
+            >
+              <img
+                src="./public/img/photo-1521119989659-a83eee488004.png"
+                alt="person1"
+              />
+              <p
+                class="text-center w-[90%] text-ni-grau-dunkel text-sm mb-2 mt-2"
+              >
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <h5 class="text-ni-green-dunkel text-sm text-center font-bold">
+                Jane Doe
+              </h5>
+              <h6 class="text-sm text-ni-grau-dunkel">CEO, Apple Inc</h6>
+            </div>
+            <div
+              class="pt-16 flex flex-col justify-center items-center gap-2"
+            >
+              <img
+                src="./public/img/photo-1521119989659-a83eee488004.png"
+                alt="person1"
+              />
+              <p
+                class="text-center w-[90%] text-ni-grau-dunkel text-sm mb-2 mt-2"
+              >
+                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
+                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
+                gravida eget ultricies sit amet, hendrerit in lorem.
+              </p>
+              <h5 class="text-ni-green-dunkel text-sm text-center font-bold">
+                Albert Doe
+              </h5>
+              <h6 class="text-sm text-ni-grau-dunkel">
+                Team Lead, Design Studio
+              </h6>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 CONTACT                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section>
+      <div
+        class="relative bg-fixed w-full h-[496px] mx-auto flex flex-col items-center justify-center"
+        style="
+          background-image: url(https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?cs=srgb&dl=pexels-vika-glitter-392079-1648776.jpg&fm=jpg);
+          background-size: cover;
+
+          background-position: center center;
+          background-repeat: no-repeat;
+        "
+      >
+        <div
+          class="flex flex-col items-center gap-2 justify-evenly absolute h-[80%] w-[80%] top-[10%] md:w-[96%] md:right-[2%] md:left-[2%] xl:w-[80%] xl:h-[80%] xl:right-[10%] xl:left-[10%] bg-black opacity-50 rounded-xl"
+        >
+          <div>
+            <h2
+              class="text-white text-4xl text-center font-alegreyaSans font-normal mb-3"
+            >
+              Contact Us
+            </h2>
+            <p class="text-sm text-white text-center">
+              Feel free to drop us a line.
+            </p>
+          </div>
+          <form
+            class="flex gap-2 flex-col w-[80%] md:w-[70%] lg:w-[60%] items-center"
+            action="#"
+          >
+            <input
+              class="bg-inherit w-full border border-ni-grau-light rounded-md p-2 placeholder:text-white text-white focus:outline-none focus-visible:outline-none"
+              type="text"
+              placeholder="Your Name"
+            />
+            <input
+              class="bg-inherit w-full border border-ni-grau-light rounded-md p-2 placeholder:text-white text-white focus:outline-none focus-visible:outline-none"
+              type="email"
+              placeholder="Your Email"
+            />
+            <textarea
+              class="bg-inherit w-full border border-ni-grau-light rounded-md p-2 placeholder:text-white text-white focus:outline-none focus-visible:outline-none"
+              placeholder="Write Something"
+              rows=""
+              cols=""
+            ></textarea>
+            <button class="btn btn-success" type="submit">Donate</button>
+            <!-- <button
+              class="text-center p-2 border border-white text-white w-fit my-4 px-2"
+              type="submit"
+            >
+              Submit -->
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 FOOTER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer>
+      <div class="bg-ni-green-dunkel text-white text-center py-32">
+        <p class="text-white w-[180px] md:w-full text-sm text-left pl-[64px]">
+          &copy; Copyright New Interior.
+        </p>
+      </div>
+    </footer>
+  </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+</body>
+</html>
