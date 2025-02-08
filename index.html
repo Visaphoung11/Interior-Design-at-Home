@@ -1,30 +1,67 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <title>My first Tailwind CSS project</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 <link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 <header>
+  <body class="bg-gray-100">
+    <nav class="bg-gray-300 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <ul class="hidden md:flex space-x-30 items-center w-full justify-center font-bold">
+                    <li><a href="#" class="text-black hover:text-gray-600">Home</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-600">About</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-600">Services</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-600">Project</a></li>
+                    </li>
+                    <img
+                    class="w-15 rounded-full"
+                    src="https://static.vecteezy.com/system/resources/previews/007/796/631/non_2x/furniture-logo-furniture-logo-outline-free-vector.jpg"
+                    alt=""
+                  />
+                    <li><a href="#" class="text-black hover:text-gray-600">FAQ</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-600">Blog</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-600">Shop</a></li>
+                    <li><a href="#" class="text-black hover:text-gray-600">Contact</a></li>
+                </ul>
+                <button type="button" class="md:hidden text-black focus:outline-none" id="menu-toggle" title="Toggle Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="md:hidden hidden flex flex-col bg-gray-300 space-y-2 p-4 font-bold" id="mobile-menu">
+            <ul class="flex flex-col space-y-2">
+                <li><a href="#" class="text-black hover:text-gray-600">Home</a></li>
+                <li><a href="#" class="text-black hover:text-gray-600">About</a></li>
+                <li><a href="#" class="text-black hover:text-gray-600">Services</a></li>
+                <li><a href="#" class="text-black hover:text-gray-600">Project</a></li>
+                <li><a href="#" class="text-black hover:text-gray-600">FAQ</a></li>
+                <li><a href="#" class="text-black hover:text-gray-600">Blog</a></li>
+                <li><a href="#" class="text-black hover:text-gray-600">Shop</a></li>
+                <li><a href="#" class="text-black hover:text-gray-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
     <div class="relative h-[447px] lg:h-[810px]">
       <img
         class="h-full w-full object-cover"
-        src="https://media.istockphoto.com/id/2170199827/photo/black-luxury-modern-retro-style-master-bedroom.jpg?s=2048x2048&w=is&k=20&c=RHIExLqcrrP0ZnkFOWX4O5WSo3Ej6-XTqMuxuidg5y8="
+        src="https://thestudiobangalore.com/wp-content/uploads/2024/03/Interior-Design-scaled-1.jpg"
         alt="header"
       />
-      <!-- <nav
-        class="absolute top-0 left-0 right-0 py-4 px-4 sm:px-16 flex flex-row justify-between items-center"
-      >
-        <a
-          href="#"
-          class="text-4xl font-alegreya text-black font-medium hover:underline whitespace-nowrap"
-          >NEW INTERIOR.</a
-        >
-      </nav> -->
       <section
         class="hero absolute top-[30%] right-[50%] translate-y-[30%] translate-x-[50%] lg:top-[40%] lg:right-[50%] lg:translate-y-[50%] lg:translate-x-[50%]"
       >
@@ -49,12 +86,13 @@
         <div
           >
           <div class="text-center mt-[50px]">
-             <h2
+            <p class="p-1 text-[40px] font-bold">Most popular projects</p>
+             <!-- <h2
                 class="text-ni-green-dunkel text-4xl font-alegreyaSans font-normal mb-3"
                >
-                  Our Latest Works
-                 </h2>
-                  <p class="text-sm">Take a look at some of our recent products</p>
+               Most popular projects
+                 </h2> -->
+                  <p class="text-xl">Welcome to our company! We provide the best interior design services, transforming spaces with creativity, elegance, functionality.</p>
                  </div>
           </div>
         </div>
@@ -198,53 +236,54 @@
           class="services-cards flex flex-col items-center gap-16 justify-evenly absolute h-[80%] w-[100%] top-[10%] md:w-[96%] md:right-[2%] md:left-[2%] xl:w-[80%] xl:h-[80%] xl:right-[10%] xl:left-[10%] bg-black opacity-50 rounded-xl"
         >
           <div class="flex flex-col items-center justify-center gap-2">
-            <h3 class="text-white text-[36px] font-alegreyaSans font-medium">
+            <p class="text-white text-[40px] font-bold">Our services</p>
+            <!-- <h3 class="text-white text-[40px] font-alegreyaSans font-medium">
               Our services
-            </h3>
-            <p class="text-white text-center text-[14px]">
-              A little about what we do
+            </h3> -->
+            <p class="text-white text-center text-xl">
+              "Transforming Spaces with Elegance: Premium Interior Design Services for Stylish and Functional Living Environments. Our expert designers craft personalized, luxurious spaces that seamlessly combine comfort, style, and functionality, tailored to your unique vision and needs."
             </p>
           </div>
           <div
             class="flex flex-col lg:flex-row gap-12 items-center justify-center"
           >
             <div class="flex flex-col items-center w-[90%]">
-              <img src="http://www.w3.org/2000/svg" alt="" />
+              <svg class="w-[50px] h-[50px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                <path d="M16 0H4a2 2 0 0 0-2 2v1H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v2H1a1 1 0 0 0 0 2h1v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM13.929 17H7.071a.5.5 0 0 1-.5-.5 3.935 3.935 0 1 1 7.858 0 .5.5 0 0 1-.5.5Z"/>
+            </svg>
               <h3
                 class="text-white text-[30px] font-alegreyaSans font-medium"
               >
                 Concepts
               </h3>
               <p class="text-white text-center text-[14px]">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+                "Elevate Your Space: Expert Interior Design for Stunning and Functional Home & Office Interiors. Transform any room with creative, personalized designs that blend style, comfort, and efficiency.
               </p>
             </div>
             <div class="flex flex-col items-center w-[90%]">
-              <img src="./public/img/Icon-1.svg" alt="" />
+              <svg class="w-[50px] h-[50px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 21">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3.464V1.1m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175C17 15.4 17 16 16.462 16H3.538C3 16 3 15.4 3 14.807c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 10 3.464ZM1.866 8.832a8.458 8.458 0 0 1 2.252-5.714m14.016 5.714a8.458 8.458 0 0 0-2.252-5.714M6.54 16a3.48 3.48 0 0 0 6.92 0H6.54Z"/>
+            </svg>
               <h3
                 class="text-white text-[30px] font-alegreyaSans font-medium"
               >
                 Colors
               </h3>
               <p class="text-white text-center text-[14px]">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+                "Creating Beautiful Interiors: Innovative Design Solutions for Modern, Elegant, and Timeless Spaces. Transform your home or office with bespoke designs that blend functionality and style.
               </p>
             </div>
             <div class="flex flex-col items-center w-[90%]">
-              <img src="./public/img/Icon-2.svg" alt="" />
+              <svg class="w-[50px] h-[50px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                <path d="M5.022 4.764c.489 0 .75-.37.8-.856l.188-1.877A.952.952 0 0 0 5.063.985H2.791a1.127 1.127 0 0 0-1.067.749A16.11 16.11 0 0 0 1 7a16.737 16.737 0 0 0 .743 5.242c.154.463 1.748.773 2.236.773H5a.95.95 0 0 0 .946-1.046l-.188-1.877a.95.95 0 0 0-.946-.856h-.761A14.627 14.627 0 0 1 3.937 7c-.02-.747.019-1.495.114-2.236h.971Zm13.365 7.592L18.6 11H14a1 1 0 0 1 0-2h4.918l.159-1H14a1 1 0 1 1 0-2h5.393l.158-1H14a1 1 0 1 1 0-2h5.868l.111-.7a2.04 2.04 0 0 0-.473-1.629A1.912 1.912 0 0 0 18.063 0H9a1 1 0 0 0-1 1v11.78A2.985 2.985 0 0 0 7 15v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a2.991 2.991 0 0 0-1.613-2.644Z"/>
+            </svg>
               <h3
                 class="text-white text-[30px] font-alegreyaSans font-medium"
               >
                 Illustration
               </h3>
               <p class="text-white text-center text-[14px]">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+                "Luxury Interior Design: Transforming Homes and Offices with Style, Elegance, and Functionality. Our designs blend premium materials, impeccable craftsmanship, and personalized details to create stunning spaces.
               </p>
             </div>
           </div>
@@ -257,8 +296,9 @@
 
     <section>
       <div class="text-center mt-[50px]">
-        <h2>dasjdhaksjdhakjdhaskdhajk</h2>
-        <p>fddsfsdjfnsjdfhsjfhjsddhfsdjkhfjkafhjskdfhsjdfhsjdfhufhudhfudhfudhfudhfudhfudfhudhfudhfudhfudhfudhfudhfudhfu</p>
+        <p class="p-1 text-[40px] font-bold">Our discount projects</p>
+        <p class="text-xl">"Exclusive Discount Projects: Affordable Interior Design Solutions with Premium Quality, Elegance, and Style for Homes and Commercial Spaces. Experience exceptional design, expert craftsmanship, and tailored solutions that elevate any environment."
+        </p>
       </div>
     </section>
      <section class="bg-ni-weiss mt-[-50px]">
@@ -276,7 +316,7 @@
           <div class="group relative max-w-[360px]">
             <img
               class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
-              src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?cs=srgb&dl=pexels-houzlook-3797991.jpg&fm=jpg"
+              src="https://cdn.msisurfaces.com/images/roomscenes/medium/lanston-oak-i.jpg"
               alt="treppe"
             />
 
@@ -284,17 +324,15 @@
               <h4
                 class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
               >
-                Design Your Mind
+              Savings
               </h4>
               <p
                 class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
               >
                 3 Nov, 2014
               </p>
-              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+              <p class="text-[14px]  mb-2">
+                Enjoy incredible discounts on our interior design projects, bringing luxury and style to your space at an unbeatable price. Transform your home or office with elegance, comfort, and functionality.
               </p>
               <a
                 class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
@@ -306,24 +344,22 @@
           <div class="group relative max-w-[360px]">
             <img
               class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
-              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg"
+              src="https://designfor-me.com/wp-content/uploads/2023/09/Interior-Designers-who-use-colour.jpeg"
               alt="sofa"
             />
             <div>
               <h4
                 class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
               >
-                Winter Is Comming
+              Deals
               </h4>
               <p
                 class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
               >
                 3 Nov, 2014
               </p>
-              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+              <p class="text-[14px] mb-2">
+                Take advantage of our special offers on premium interior design services, ensuring affordability while maintaining exceptional quality, style, and personalized attention to detail for every space.
               </p>
               <a
                 class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
@@ -335,24 +371,22 @@
           <div class="group relative max-w-[360px]">
             <img
               class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
-              src="https://images.squarespace-cdn.com/content/v1/5820b938d482e9a9a7034dea/1578671565965-M3T2P1AD7U714UTNKJUV/pexels-photo-1571458.jpg"
+              src="https://s.alicdn.com/@sc04/kf/U56012a70b18d42b8bd138e26cd2b976cx.jpg_720x720q50.jpg"
               alt="kueche"
             />
             <div>
               <h4
                 class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
               >
-                The Illustration
+              Offers
               </h4>
               <p
                 class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
               >
                 3 Nov, 2014
               </p>
-              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+              <p class="text-[14px] mb-2">
+                Exclusive limited-time offers on stunning interior transformations, allowing you to achieve a beautifully designed home or office with elegance, functionality, and personalized touches that reflect your unique style.
               </p>
               <a
                 class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
@@ -365,6 +399,7 @@
         </div>
       </div>
     </section>
+    <!--Another section of three images-->
     <section>
       <section class="bg-ni-weiss mt-[-50px]">
       <div class="xl:w-[1170px] mx-auto pb-16">
@@ -381,7 +416,7 @@
           <div class="group relative max-w-[360px]">
             <img
               class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
-              src="https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?cs=srgb&dl=pexels-houzlook-3797991.jpg&fm=jpg"
+              src="https://www.rentmoi.com/wp-content/uploads/2018/10/splash-one-villa-float-in-the-pool-of-a-gorgeous-villa-0.jpg"
               alt="treppe"
             />
 
@@ -389,18 +424,15 @@
               <h4
                 class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
               >
-                Design Your Mind
+              Discounts
               </h4>
               <p
                 class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
               >
-                3 Nov, 2014
+                3 Dec, 2017
               </p>
-              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
-              </p>
+              <p class="text-[14px] mb-2">
+                Unlock amazing discounts on our expert interior design services, helping you create stylish, functional, and personal spaces that reflect your unique taste and elevate every room's atmosphere.</p>
               <a
                 class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
                 href="#"
@@ -411,24 +443,22 @@
           <div class="group relative max-w-[360px]">
             <img
               class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
-              src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?cs=srgb&dl=pexels-fotoaibe-1571460.jpg&fm=jpg"
+              src="https://www.spirittileandstone.com/wp-content/uploads/2021/10/domestic.jpg"
               alt="sofa"
             />
             <div>
               <h4
                 class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
               >
-                Winter Is Comming
+              Promotions
               </h4>
               <p
                 class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
               >
-                3 Nov, 2014
+                7 Jun, 2019
               </p>
-              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+              <p class="text-[14px] mb-2">
+                Explore our latest promotions on high-end interior designs, providing you with cost-effective solutions to upgrade. add 10 more words
               </p>
               <a
                 class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
@@ -440,24 +470,22 @@
           <div class="group relative max-w-[360px]">
             <img
               class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
-              src="https://images.squarespace-cdn.com/content/v1/5820b938d482e9a9a7034dea/1578671565965-M3T2P1AD7U714UTNKJUV/pexels-photo-1571458.jpg"
+              src="https://www.buildingmaterialreporter.com/uploads/blogs/files/image-20240816104534-5.jpeg"
               alt="kueche"
             />
             <div>
               <h4
                 class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
               >
-                The Illustration
+              SavingsPlan
               </h4>
               <p
                 class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
               >
-                3 Nov, 2014
+                9 Jan, 2018
               </p>
-              <p class="text-[14px] text-ni-grau-dunkel font-light mb-2">
-                In at accumsan risus. Nam id volutpat ante. Etiam vel mi
-                mattis, vulputate nunc nec, sodales nibh. Etiam nulla magna,
-                gravida eget ultricies sit amet, hendrerit in lorem.
+              <p class="text-[14px] mb-2">
+                Our budget-friendly design solutions offer significant savings while delivering breathtaking interiors that enhance aesthetics, functionality, and comfort, tailored to your specific style and needs.
               </p>
               <a
                 class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
@@ -479,11 +507,9 @@
           class="flex flex-col items-center gap-2 justify-evenly absolute h-[80%] w-[80%] top-[10%] md:w-[96%] md:right-[2%] md:left-[2%] xl:w-[80%] xl:h-[80%] xl:right-[10%] xl:left-[10%] bg-black opacity-50 rounded-xl"
         >
           <h3
-            class="text-white text-[36px] text-center font-alegreyaSans font-light"
+            class="text-white text-[26px] text-center font-alegreyaSans font-light"
           >
-            In at accumsan risus. Nam id volutpat ante. Etiam vel mi mattis,
-            vulputate nunc nec, sodales nibh. Etiam nulla magna, gravida eget
-            ultricies sit amet, hendrerit.
+          "Great design is not just about beauty, it’s about creating spaces that inspire, uplift, and function perfectly, blending style with comfort to reflect your unique personality and elevate every moment spent within."
           </h3>
           <a
             class="cursor-pointer text-white text-center border p-2 border-white text-[14px] hover:text-ni-green-dunkel hover:bg-white"
@@ -503,14 +529,16 @@
           class="flex flex-col justify-around min-[1142px]:justify-between items-center py-16 px-16"
         >
           <div>
-            <h2
+            <p class="p-1 text-[40px] font-bold text-center">Testimonials</p>
+            <!-- <h2
               class="text-ni-green-dunkel text-4xl text-center font-alegreyaSans font-normal mb-3"
             >
               Testimonials
-            </h2>
-            <p class="text-sm text-center">
+            </h2> -->
+            <!-- <p class="text-sm text-center">
               Some happy customers have to say.
-            </p>
+            </p> -->
+            <p class="text-xl text-center">"Working with this company was an outstanding experience! Their innovative interior design solutions transformed our corporate space into a stylish, functional, and inspiring environment. Highly recommended for anyone seeking exceptional design services!"</p>
           </div>
           <div
             class="pt-16 flex flex-col lg:flex-row justify-center items-center gap-2"
@@ -642,15 +670,266 @@
     <!-- ----------------------------------------------------------------------- -->
     <!--                                 FOOTER                                  -->
     <!-- ----------------------------------------------------------------------- -->
-    <footer>
+     <!-- Footer section with social media icons and newsletter sign-up -->
+<footer
+class="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-blue-900 dark:text-white">
+<div class="container px-6 pt-6">
+  <!-- Social media icons container -->
+  <div class="mb-6 flex justify-center space-x-2">
+    <a
+      href="#!"
+      type="button"
+      class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+      data-twe-ripple-init
+      data-twe-ripple-color="light">
+      <span class="[&>svg]:h-5 [&>svg]:w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 320 512">
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+          <path
+            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+        </svg>
+      </span>
+    </a>
+
+    <a
+      href="#!"
+      type="button"
+      class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+      data-twe-ripple-init
+      data-twe-ripple-color="light">
+      <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 512 512">
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+          <path
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+        </svg>
+      </span>
+    </a>
+
+    <a
+      href="#!"
+      type="button"
+      class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+      data-twe-ripple-init
+      data-twe-ripple-color="light">
+      <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 488 512">
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+          <path
+            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+        </svg>
+      </span>
+    </a>
+
+    <a
+      href="#!"
+      type="button"
+      class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+      data-twe-ripple-init
+      data-twe-ripple-color="light">
+      <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 448 512">
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+          <path
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+        </svg>
+      </span>
+    </a>
+
+    <a
+      href="#!"
+      type="button"
+      class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+      data-twe-ripple-init
+      data-twe-ripple-color="light">
+      <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 448 512">
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+          <path
+            d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+        </svg>
+      </span>
+    </a>
+
+    <a
+      href="#!"
+      type="button"
+      class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+      data-twe-ripple-init
+      data-twe-ripple-color="light">
+      <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 496 512">
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+          <path
+            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+        </svg>
+      </span>
+    </a>
+  </div>
+
+  <!-- Newsletter sign-up form -->
+  <div>
+    <form action="">
+      <div
+        class="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+        <div class="md:mb-6 md:ms-auto">
+          <p>
+            <strong>Sign up for our newsletter</strong>
+          </p>
+        </div>
+
+        <!-- Newsletter sign-up input field -->
+        <div class="relative md:mb-6" data-twe-input-wrapper-init>
+          <input
+            type="email"
+            class=" border-2 border-gray-700 focus:border-pink-600 peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleFormControlInputEmail"
+            placeholder="Email address" />
+          <label
+            for="exampleFormControlInputEmail"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-400 dark:peer-focus:text-primary"
+            >Email address
+          </label>
+        </div>
+
+        <!-- Newsletter sign-up submit button -->
+        <div class="mb-6 md:me-auto">
+          <button
+            type="submit"
+            class="inline-block rounded px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
+            data-twe-ripple-init
+            data-twe-ripple-color="light">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Copyright information -->
+  <div class="mb-6">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+      distinctio earum repellat quaerat voluptatibus placeat nam,
+      commodi optio pariatur est quia magnam eum harum corrupti dicta,
+      aliquam sequi voluptate quas.
+    </p>
+  </div>
+
+  <!-- Links section -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4">
+    <div class="mb-6">
+      <h5 class="mb-2.5 font-bold uppercase">Links</h5>
+
+      <ul class="mb-0 list-none">
+        <li>
+          <a href="#!">Link 1</a>
+        </li>
+        <li>
+          <a href="#!">Link 2</a>
+        </li>
+        <li>
+          <a href="#!">Link 3</a>
+        </li>
+        <li>
+          <a href="#!">Link 4</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-6">
+      <h5 class="mb-2.5 font-bold uppercase">Links</h5>
+
+      <ul class="mb-0 list-none">
+        <li>
+          <a href="#!">Link 1</a>
+        </li>
+        <li>
+          <a href="#!">Link 2</a>
+        </li>
+        <li>
+          <a href="#!">Link 3</a>
+        </li>
+        <li>
+          <a href="#!">Link 4</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-6">
+      <h5 class="mb-2.5 font-bold uppercase">Links</h5>
+
+      <ul class="mb-0 list-none">
+        <li>
+          <a href="#!">Link 1</a>
+        </li>
+        <li>
+          <a href="#!">Link 2</a>
+        </li>
+        <li>
+          <a href="#!">Link 3</a>
+        </li>
+        <li>
+          <a href="#!">Link 4</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mb-6">
+      <h5 class="mb-2.5 font-bold uppercase">Links</h5>
+
+      <ul class="mb-0 list-none">
+        <li>
+          <a href="#!">Link 1</a>
+        </li>
+        <li>
+          <a href="#!">Link 2</a>
+        </li>
+        <li>
+          <a href="#!">Link 3</a>
+        </li>
+        <li>
+          <a href="#!">Link 4</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Copyright section -->
+<div class="w-full bg-black/5 p-4 text-center">
+  © 2023 Copyright:
+  <a class="font-semibold" href="https://tw-elements.com/"
+    >TW Elements</a
+  >
+</div>
+</footer>
+    <!-- <footer>
       <div class="bg-ni-green-dunkel text-white text-center py-32">
         <p class="text-white w-[180px] md:w-full text-sm text-left pl-[64px]">
           &copy; Copyright New Interior.
         </p>
       </div>
-    </footer>
+    </footer> -->
   </main>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
 </body>
